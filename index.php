@@ -60,7 +60,7 @@ JHtml::_('script', 'scripts.js', array('version' => 'auto', 'relative' => true))
 
     <h1>Neue Website</h1>
 
-    <p class="beschreibung">Hier entsteht grade eine neue Website die ihr nicht verpassen solltet!</p>
+    <p class="beschreibung">Hier entsteht gerade eine neue Website.</p>
 
     <div id="timer"></div>
 
