@@ -1,0 +1,2 @@
+# wl-placeholder
+Joomla Template
