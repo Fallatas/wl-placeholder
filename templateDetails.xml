@@ -81,6 +81,14 @@
 							maxyear="5"
 					/>
 
+                    <field
+                            name="date-color"
+                            type="color"
+                            default="#ff6600"
+                            label="Farbe der Zeit wählen"
+                            description="Beliebige Farbe für die Zeit wählen"
+                    />
+
 				</fieldset>
 			</fieldset>
 		</fields>
