@@ -65,8 +65,20 @@ $style .= 'body .page p { color: '.$noticeColor.';}';
 $style .= 'body .page #timer { color: '.$dateColor.';}';
 
 
-
 $document->addStyleDeclaration( $style );
+
+
+
+// Add Javascript
+$document = JFactory::getDocument();
+$document->addScript('templates/' . $this->template .'/js/scripts.js');
+
+
+JFactory::getDocument()->addScriptDeclaration("jQuery(document).ready(function () {  
+
+console.log('works');
+
+});");
 
 // Add Stylesheets
 JHtml::_('stylesheet', 'style.css', array('version' => 'auto', 'relative' => true));
