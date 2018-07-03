@@ -48,7 +48,7 @@ $dateColor = $params->get('date-color');
 
 
 $document = JFactory::getDocument();
-$document->addStyleSheet(JURI::base() . $this->template .'/wl-placeholder/css/style.css');
+$document->addStyleSheet('templates/' . $this->template .'/js/style.css');
 
 
 $style = '';
