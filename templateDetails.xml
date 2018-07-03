@@ -14,6 +14,77 @@
 		<folder>css</folder>
 		<folder>js</folder>
 	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<fieldset>
+
+					<field
+							name="heading"
+							type="text"
+							default="Neue Webseite"
+							label="Überschrift wählen"
+							description="Beliebige Überschrift wählen"
+							size="10"
+					/>
+
+					<field
+							name="notice"
+							type="text"
+							default="Hier entsteht gerade eine neue Website"
+							label="Notiz wählen"
+							description="Beliebige Notiz wählen"
+							size="10"
+					/>
+
+					<field
+							name="heading-color"
+							type="color"
+						   	default="#ffffff"
+						   	label="Farbe der Überschrift wählen"
+						   	description="Beliebige Farbe der Überschrift wählen"
+					/>
+
+					<field
+							name="notice-color"
+						   	type="color"
+						   	default="#ffffff"
+						   	label="Farbe der Notiz wählen"
+							description="Beliebige Farbe der Notiz wählen"
+					/>
+
+					<field
+							name="background-color"
+							type="color"
+							default="#111111"
+							label="Farbe des Hintergrunds wählen"
+							description="Beliebige Farbe für den Hintergrund wählen"
+					/>
+
+					<field
+							name="date"
+							type="calendar"
+							default="2017-05-15"
+							label="Wähle ein Datum"
+							description="Beliebiges Datum wählen"
+						   	class="input-medium"
+							required="true"
+							filter="user_utc"
+							format="%Y-%m-%d %H:%M:%S"
+						   	singleheader="true"
+							showtime="true"
+							timeformat="12"
+							todaybutton="true"
+							weeknumbers="true"
+						   	filltable="true"
+							minyear="-3"
+							maxyear="5"
+					/>
+
+				</fieldset>
+			</fieldset>
+		</fields>
+	</config>
 	<positions>
 		
 	</positions>
