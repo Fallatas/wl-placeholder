@@ -37,6 +37,37 @@ else
     $fullWidth = 0;
 }
 
+/* Template Params */
+$heading = $params->get('heading');
+$notice = $params->get('notice');
+$headingColor = $params->get('heading-color');
+$noticeColor = $params->get('notice-color');
+$backgroundColor = $params->get('background-color');
+$date = $params->get('date');
+$dateColor = $params->get('date-color');
+
+
+$document = JFactory::getDocument();
+$document->addStyleSheet(JURI::base() . $this->template .'/wl-placeholder/css/style.css');
+
+
+$style = '';
+
+
+$style .= 'body .page h1 { 
+color: '.$headingColor.';
+}';
+
+$style .= 'body { background: '.$backgroundColor.';}';
+
+$style .= 'body .page p { color: '.$noticeColor.';}';
+
+$style .= 'body .page #timer { color: '.$dateColor.';}';
+
+
+
+$document->addStyleDeclaration( $style );
+
 // Add Stylesheets
 JHtml::_('stylesheet', 'style.css', array('version' => 'auto', 'relative' => true));
 
