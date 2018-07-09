@@ -6,25 +6,28 @@
 	<creationDate>27/06/2018</creationDate>
 	<author>Thomas Winterling</author>
 	<authorEmail>fallatas85@gmail.com</authorEmail>
-	<copyright>Copyright (C) 2005 - 2017 Thomas Winterling. All rights reserved.</copyright>
-	<description>WL-PLACEHOLDER_XML_DESCRIPTION</description>
+	<copyright>Copyright (C) 2005 - 2018 Thomas Winterling. All rights reserved.</copyright>
+	<description>TPL_WL-PLACEHOLDER_XML_DESCRIPTION</description>
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
 		<folder>css</folder>
 		<folder>js</folder>
 	</files>
+    <languages folder="language">
+        <language tag="de-DE">de-DE/de-DE.wl-placeholder.ini</language>
+        <language tag="de-DE">de-DE/de-DE.wl-placeholder.sys.ini</language>
+    </languages>
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
-				<fieldset>
+			<fieldset name="advanced">
 
 					<field
 							name="heading"
 							type="text"
 							default="Neue Webseite"
-							label="Überschrift wählen"
-							description="Beliebige Überschrift wählen"
+							label="TPL_WL-PLACEHOLDER_HEADING_LABEL"
+							description="TPL_WL-PLACEHOLDER_HEADING_DESC"
 							size="10"
 					/>
 
@@ -32,8 +35,8 @@
 							name="notice"
 							type="text"
 							default="Hier entsteht gerade eine neue Website"
-							label="Notiz wählen"
-							description="Beliebige Notiz wählen"
+							label="TPL_WL-PLACEHOLDER_NOTICE_LABEL"
+							description="TPL_WL-PLACEHOLDER_NOTICE_DESC"
 							size="10"
 					/>
 
@@ -41,32 +44,32 @@
 							name="heading-color"
 							type="color"
 						   	default="#ffffff"
-						   	label="Farbe der Überschrift wählen"
-						   	description="Beliebige Farbe der Überschrift wählen"
+						   	label="TPL_WL-PLACEHOLDER_HEADING_COLOR_LABEL"
+						   	description="TPL_WL-PLACEHOLDER_HEADING_COLOR_DESC"
 					/>
 
 					<field
 							name="notice-color"
 						   	type="color"
 						   	default="#ffffff"
-						   	label="Farbe der Notiz wählen"
-							description="Beliebige Farbe der Notiz wählen"
+						   	label="TPL_WL-PLACEHOLDER_NOTICE_COLOR_LABEL"
+							description="TPL_WL-PLACEHOLDER_NOTICE_COLOR_DESC"
 					/>
 
 					<field
 							name="background-color"
 							type="color"
 							default="#111111"
-							label="Farbe des Hintergrunds wählen"
-							description="Beliebige Farbe für den Hintergrund wählen"
+							label="TPL_WL-PLACEHOLDER_BACKGROUND_COLOR_LABEL"
+							description="TPL_WL-PLACEHOLDER_BACKGROUND_COLOR_DESC"
 					/>
 
 					<field
 							name="date"
 							type="calendar"
 							default="2017-05-15"
-							label="Wähle ein Datum"
-							description="Beliebiges Datum wählen"
+							label="TPL_WL-PLACEHOLDER_DATE_LABEL"
+							description="TPL_WL-PLACEHOLDER_DATE_DESC"
 						   	class="input-medium"
 							required="true"
 							filter="user_utc"
@@ -85,15 +88,11 @@
                             name="date-color"
                             type="color"
                             default="#ff6600"
-                            label="Farbe der Zeit wählen"
-                            description="Beliebige Farbe für die Zeit wählen"
+                            label="TPL_WL-PLACEHOLDER_DATE_COLOR_LABEL"
+                            description="TPL_WL-PLACEHOLDER_DATE_COLOR_DESC"
 					/>
 
-				</fieldset>
 			</fieldset>
 		</fields>
 	</config>
-	<positions>
-		
-	</positions>
 </extension>
