@@ -15,8 +15,8 @@
 		<folder>js</folder>
 	</files>
     <languages folder="language">
-        <language tag="de-DE">de-DE/de-DE.wl-placeholder.ini</language>
-        <language tag="de-DE">de-DE/de-DE.wl-placeholder.sys.ini</language>
+        <language tag="de-DE">de-DE.tpl_wl-placeholder.ini</language>
+        <language tag="de-DE">de-DE.tpl_wl-placeholder.sys.ini</language>
     </languages>
 	<config>
 		<fields name="params">
